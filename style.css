@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微軟正黑體"
+}
+
+#banner{
+    background-image: url(image/Banner.jpg);
+    background-size:100vw;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 600px;
+}
+
+#logo{
+    width: 300px;
+}
+
+#link{
+    float: right;
+    padding: 40px 0;
+}
+
+#link a:hover{
+    color:black;
+    background-color:#ffe048;
+    transition: 0.6s;
+}
+
+#link a{
+    color:white;
+    text-decoration: none;
+    padding: 5px 15px;
+    /* 字體粗細 0-900 */
+    font-weight: 800;
+}
+
+nav{
+    /* 調整盒子(logo+最新消息)往內集中的距離 */
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
