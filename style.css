@@ -4,12 +4,16 @@
     font-family: "微軟正黑體"
 }
 
+body{
+    background-color: #faf7f0;
+}
+
 #banner{
     background-image: url(image/Banner.jpg);
     background-size:100vw;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 600px;
+    height: calc(100vw/2.1);
 }
 
 #logo{
@@ -35,9 +39,46 @@
     font-weight: 800;
 }
 
+/* 導覽列區塊 */
 nav{
     /* 調整盒子(logo+最新消息)往內集中的距離 */
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
+}
+
+/* 品牌區塊 */
+#brands{
+    text-align: center;
+    color: #58451a;
+}
+
+/* 標記class用. */
+.title-box{
+    text-align: center;
+    color:#58451a;
+}
+
+/* 偽元素 */
+.title::before{
+    content:"＼" ;
+    padding-right:5px;
+}
+
+.title::after{
+    content:"／";
+    padding-left: 5px;
+}
+
+#brands p{
+    width: 500px;
+    /* 使字置中 */
+    margin: 0 auto;
+    padding: 30px;
+    /* 段落字的分行 */
+    line-height: 2;
+    /* 調整透明度 */
+    opacity: 0.6;
+    /* 調整字的間距 */
+    letter-spacing:6;
 }
