@@ -82,3 +82,13 @@ nav{
     /* 調整字的間距 */
     letter-spacing:6;
 }
+
+#product{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap:20px;
+}
+
+#product img{
+    width: 100%;
+}
