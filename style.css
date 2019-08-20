@@ -6,6 +6,7 @@
 
 body{
     background-color: #faf7f0;
+    text-align: center;
 }
 
 #banner{
@@ -16,22 +17,22 @@ body{
     height: calc(100vw/2.1);
 }
 
-#logo{
+.logo{
     width: 300px;
 }
 
-#link{
+.link{
     float: right;
     padding: 40px 0;
 }
 
-#link a:hover{
+.link a:hover{
     color:black;
     background-color:#ffe048;
     transition: 0.6s;
 }
 
-#link a{
+.link a{
     color:white;
     text-decoration: none;
     padding: 5px 15px;
@@ -83,12 +84,83 @@ nav{
     letter-spacing:6;
 }
 
+/* 產品區塊 */
 #product{
+    /* 顯示模式:格線 */
     display: grid;
+    /* 格線-框架-欄位:欄位尺寸 欄位尺寸 欄位尺寸 */
     grid-template-columns:auto auto auto;
-    grid-gap:20px;
+    /* 格線:間隙 */
+    grid-gap:50px;
+    padding: 50px;
+    width: 950px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 #product img{
     width: 100%;
+}
+
+.product-box h2{
+    color: #fbae1a;
+}
+
+.product-box a{
+    text-decoration: none;
+}
+
+.product-box hr{
+    height: 2px;
+    background-color:  #bdac90;
+    border: 0;
+    margin: 20px 0;
+}
+
+.product-box p{
+    color:#333333;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.btn-big{
+    display: inline-block;
+    background-color:  #642200 ;
+    color: #fff;
+    padding: 10px 80px;
+    /* 取消預設連結線 */
+    text-decoration: none;
+    /* "觀看產品目錄"之框線設定 */
+    border: 2px solid #642200;
+    font-weight: 900;
+    /* 加入動畫 */
+    transition: 0.8s;
+}
+
+.btn-big:hover{
+    background-color: transparent;
+    color:#642200;
+}
+
+.small-line{
+    background-image: url(image/small-line.png);
+    height: 5px;
+    /* 圖片單一重複 */
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+footer{
+    background-color: #642200;
+    color:#fff;
+    margin-top: 100px;
+}
+
+footer #copy{
+    /* 隔開距離 */
+    padding-top: 50px;
+    color:#fff;
+    font-size: 0.5em;
+    text-align: center;
 }
