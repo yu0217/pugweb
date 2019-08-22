@@ -16,17 +16,12 @@ mixin product-box(img,tit2,text)
 html(lang="zh")
     head
         meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no")
         title 狸小路 | 首頁
         link(rel="stylesheet", href="style.css")
         link(rel="shortcut icon", href="image/ico.png", type="image/x-icon")
     body
-        div(id="banner")
-            nav
-                img(src="image/Logo.png" alt="狸小路 LOGO" class="logo")
-                div(class="link")
-                    a(href="#") 最新消息
-                    a(href="#") 產品介紹
-                    a(href="#") 聯絡我們
+        include nav.pug
         section(id="brands")
             +title("BRANDS","狸小路的堅持")
             p 不加多餘的糖份、油脂，不給不必要的色素裝飾，只有單純原味，與健康分享，不靠防腐香精來增加香氣與保存期限，使甜膩少一點、但保存短一點，讓你吃的無負擔，追求健康多一點。
@@ -47,14 +42,9 @@ html(lang="zh")
         a(href="#" )
 
         +title("NEWS","最新消息")
+
         a(href="#" class="btn-big") 觀看更多消息
 
         +title("CONTACT","聯絡我們")
-    footer
-        nav
-            img(src="image/Logo.png" alt="狸小路 LOGO" class="logo")
-            div(class="link")
-                a(href="#") 最新消息
-                a(href="#") 產品介紹
-                a(href="#") 聯絡我們
-            div(id="copy") copyright &copy; 2019 狸小路 All rights resered
+    
+        include footer.pug
